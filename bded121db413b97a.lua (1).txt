@@ -1,0 +1,215 @@
+-- ts file was generated at discord.gg/25ms
+
+game:GetService('ReplicatedStorage')
+
+local _7 = game:GetService('UserInputService')
+local _8 = game:GetService('Players').LocalPlayer
+local _16 = loadstring(game:HttpGet('https://raw.githubusercontent.com/Footagesus/WindUI/main/dist/main.lua'))():CreateWindow({
+    Folder = 'ButtonUI',
+    SideBarWidth = 200,
+    Title = 'Bomb Jump',
+    Transparent = true,
+    Theme = 'Dark',
+    Author = 'GPT',
+    Icon = 'rbxassetid://0',
+    Size = UDim2.fromOffset(500, 350),
+})
+local _18 = _16:Tab({
+    Title = 'Prank Bomb',
+    Icon = 'mouse-pointer-click',
+})
+local _20 = _16:Tab({
+    Title = 'Gold Jump',
+    Icon = 'mouse-pointer-click',
+})
+local _22 = Instance.new('ScreenGui')
+
+_22.Name = 'BombJumpUI'
+_22.ResetOnSpawn = false
+_22.Parent = _8.PlayerGui
+
+local _37 = ColorSequence.new({
+    [1] = ColorSequenceKeypoint.new(0, Color3.fromRGB(90, 90, 90)),
+    [2] = ColorSequenceKeypoint.new(1, Color3.fromRGB(170, 170, 170)),
+})
+local _ = Enum.KeyCode.E
+local _41 = Instance.new('TextButton')
+
+_41.Parent = _22
+_41.Size = UDim2.new(0, 70, 0, 130)
+_41.Position = UDim2.new(0.5, -35, 0.5, -65)
+_41.Text = 'Jump'
+_41.TextScaled = true
+_41.Font = Enum.Font.GothamBold
+_41.TextColor3 = Color3.fromRGB(200, 200, 200)
+_41.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+_41.BackgroundTransparency = 0.2
+_41.Active = true
+_41.AutoButtonColor = false
+
+local _49 = Instance.new('UICorner')
+
+_49.Parent = _41
+
+local _51 = Instance.new('UIGradient')
+
+_51.Parent = _41
+_51.Color = _37
+_51.Rotation = 45
+_41.Size = UDim2.new(0, 70, 0, 130)
+_49.CornerRadius = UDim.new(0, 16)
+
+_8.CharacterAdded:Connect(function(...) end)
+_41.InputBegan:Connect(function(...) end)
+_7.InputEnded:Connect(function(...) end)
+_7.InputChanged:Connect(function(...) end)
+_41.MouseButton1Click:Connect(function(...) end)
+_18:Dropdown({
+    Callback = function(...) end,
+    Default = 'E',
+    Title = 'Keybind',
+    Values = {
+        [1] = 'E',
+        [2] = 'Q',
+        [3] = 'R',
+        [4] = 'F',
+        [5] = 'G',
+        [6] = 'T',
+        [7] = 'X',
+        [8] = 'C',
+        [9] = 'V',
+        [10] = 'Z',
+    },
+})
+_7.InputBegan:Connect(function(...) end)
+_18:Toggle({
+    Callback = function(...) end,
+    Title = 'Show Button',
+    Default = true,
+})
+_18:Toggle({
+    Callback = function(...) end,
+    Title = 'Edit Mode',
+    Default = false,
+})
+_18:Slider({
+    Value = {
+        Min = 1,
+        Default = 70,
+        Max = 500,
+    },
+    Title = 'Width',
+    Callback = function(...) end,
+})
+_18:Slider({
+    Value = {
+        Min = 1,
+        Default = 130,
+        Max = 500,
+    },
+    Title = 'Height',
+    Callback = function(...) end,
+})
+_18:Slider({
+    Value = {
+        Min = 0,
+        Default = 1,
+        Max = 1,
+    },
+    Callback = function(...) end,
+    Title = 'Corner Roundness',
+    Step = 0.1,
+})
+
+local _99 = ColorSequence.new({
+    [1] = ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 200, 0)),
+    [2] = ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 120)),
+})
+local _ = Enum.KeyCode.E
+local _103 = Instance.new('TextButton')
+
+_103.Parent = _22
+_103.Size = UDim2.new(0, 70, 0, 130)
+_103.Position = UDim2.new(0.5, -35, 0.5, -65)
+_103.Text = 'Jump'
+_103.TextScaled = true
+_103.Font = Enum.Font.GothamBold
+_103.TextColor3 = Color3.fromRGB(255, 240, 120)
+_103.BackgroundColor3 = Color3.fromRGB(255, 210, 60)
+_103.BackgroundTransparency = 0.2
+_103.Active = true
+_103.AutoButtonColor = false
+
+local _111 = Instance.new('UICorner')
+
+_111.Parent = _103
+
+local _113 = Instance.new('UIGradient')
+
+_113.Parent = _103
+_113.Color = _99
+_113.Rotation = 45
+_103.Size = UDim2.new(0, 70, 0, 130)
+_111.CornerRadius = UDim.new(0, 16)
+
+_8.CharacterAdded:Connect(function(...) end)
+_103.InputBegan:Connect(function(...) end)
+_7.InputEnded:Connect(function(...) end)
+_7.InputChanged:Connect(function(...) end)
+_103.MouseButton1Click:Connect(function(...) end)
+_20:Dropdown({
+    Callback = function(...) end,
+    Default = 'E',
+    Title = 'Keybind',
+    Values = {
+        [1] = 'E',
+        [2] = 'Q',
+        [3] = 'R',
+        [4] = 'F',
+        [5] = 'G',
+        [6] = 'T',
+        [7] = 'X',
+        [8] = 'C',
+        [9] = 'V',
+        [10] = 'Z',
+    },
+})
+_7.InputBegan:Connect(function(...) end)
+_20:Toggle({
+    Callback = function(...) end,
+    Title = 'Show Button',
+    Default = true,
+})
+_20:Toggle({
+    Callback = function(...) end,
+    Title = 'Edit Mode',
+    Default = false,
+})
+_20:Slider({
+    Value = {
+        Min = 1,
+        Default = 70,
+        Max = 500,
+    },
+    Title = 'Width',
+    Callback = function(...) end,
+})
+_20:Slider({
+    Value = {
+        Min = 1,
+        Default = 130,
+        Max = 500,
+    },
+    Title = 'Height',
+    Callback = function(...) end,
+})
+_20:Slider({
+    Value = {
+        Min = 0,
+        Default = 1,
+        Max = 1,
+    },
+    Callback = function(...) end,
+    Title = 'Corner Roundness',
+    Step = 0.1,
+})
